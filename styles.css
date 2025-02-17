@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    height: 480px;
+}
+
+main {
+    width: 100vw;
+}
+
+#img1 {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.container-hero {
+    width: 80vw;
+    height: 500px;
+    margin: 50px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 50px 200px;
+    gap: 30px;
+    justify-items: center;
+}
+#pb {
+    width: 250px;
+    height: 250px;
+    grid-row: 1;
+}
+.wami {
+    grid-row: 2;
+    font-size: 50px;
+    font-family: "Cardo", serif;
+    color: #7ea3ca;
+}
+.head-text {
+    grid-row: 3;
+    font-size: 20px;
+    font-family: "Teachers", serif;
+}
+
+
+.container-skills {
+    width: 80vw;
+    height: 450px;
+    margin: 50px auto 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 100px 175px 175px;
+}
+.sih {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 50px;
+    font-family: "Cardo", serif;
+    text-align: center;
+    margin: auto;
+    color: #7ea3ca;    
+}
+.techpicture {
+    grid-row: 2;
+    grid-column: 2;
+    height: 200px;
+    margin: auto;
+    grid-row: span 2;
+}
+.p-html {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-align: right;
+    direction: rtl;
+    
+}
+.p-css {
+    grid-row: 2;
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    direction: ltr;
+}
+.p-js {
+    grid-row: 3;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-align: right;
+    direction: rtl;
+}
+.p-bootstrap {
+    grid-row: 3;
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    direction: ltr;
+}
+
+
+
+.container-projects {
+    width: 80vw;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.projects {
+    font-size: 50px;
+    font-family: "Cardo", serif;
+    text-align: center;
+    color: #7ea3ca;
+    margin: 50px 0 20px 0; 
+}
+.card {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Teachers", serif;
+}
+.img-mondrian, .img-moveit, .img-tindog {
+    width: 20vw;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+a {
+    color: #010101;
+}
+
+footer {
+    width: 100vw;
+    height: 50px;
+    background-color: #7ea3ca;
+    color: white;
+    font-size:20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1100px) {
+    #img1 {
+        height: 500px;
+    }
+
+    .container-hero {
+        height: 400px;
+        
+        gap: 10px;
+    }
+
+    .wami {
+        font-size: 40px;
+    }
+
+    .head-text {
+        font-size: 16px;
+    }
+
+    .container-skills {
+        grid-template-columns: 0 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .techpicture {
+        display: none;
+    }
+
+    .sih {
+        font-size: 40px;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .p-html {
+        grid-row: 2;
+        grid-column: span 3;
+        text-align: left;
+        margin: 0 auto;
+        direction: ltr;
+    }
+    .p-css {
+        grid-row: 3;
+        grid-column: span 3;
+        margin: 0 auto;
+    }
+    .p-js {
+        grid-row: 4;
+        grid-column: span 3;
+        text-align: left;
+        margin: 0 auto;
+        direction: ltr;
+    }
+    .p-bootstrap {
+        grid-row: 5;
+        grid-column: span 3;
+        margin: 0 auto;
+    }
+
+    
+    .container-projects {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+    .img-mondrian, .img-moveit, .img-tindog {
+        min-width: 230px;
+    }
+}

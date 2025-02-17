@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maik's Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="img1" src="./Assets/Website design.png" alt="Snowy Landscape" />
+    </header>
+
+    <main> 
+        <div class="hero container-hero">
+            <img id="pb" src="./Assets/pic.png" alt="Picture" />
+            <h2 class="wami">Who am I?</h2>
+            <div class="text">
+                <p class="head-text">My name is Maik Hanke, I am 24 years old, and I am currently teaching myself web development through a course on Udemy. With my passion for technology and commitment to continuous learning, I strive to expand my skills and establish myself in the world of web development. </p>
+            </div>
+        </div> 
+        
+
+        <div class="skills container-skills">
+            <h2 class="sih">Skill I have</h2>
+            <img class="techpicture" src="./Assets/tech.png" alt="tech picture"/>
+            <div class="p-html">
+                <div class="html-container">
+                    <p class="t-html">HTML</p>
+                    <progress id="html" max="100" value="70"></progress>
+                </div>  
+            </div>
+            <div class="p-css">
+                <div class="css-container">
+                   <p class="t-css">CSS</p>
+                    <progress id="css" max="100" value="50"></progress> 
+                </div>   
+            </div>
+            <div class="p-js">
+                <div class="js-container">
+                    <p class="t-js">Javascript</p>
+                    <progress id="javascript" max="100" value="5"></progress>
+                </div>  
+            </div>
+            <div class="p-bootstrap">
+                <div class="bootstrap-container">
+                    <p class="t-bootstrap">Bootstrap</p>
+                    <progress id="bootstrap" max="100" value="30"></progress> 
+                </div> 
+            </div>
+        </div>
+
+
+        <h2 class="projects">Projects</h2>
+        <div class="container-projects">
+            <div class="card mondrian">
+                <h3>Mondrian</h3>
+                <a href="./projects/Mondrian Project/index.html">
+                    <img class="img-mondrian" src="./Assets/mondrain.png"/>
+                Show me</a>   
+            </div>
+            <div class="card movieit">
+                <h3>MoveIt</h3>
+                <a href="./projects/Bootstrap Components/index.html">
+                    <img class="img-moveit" src="./Assets/moveit.png" />
+                Show me</a>
+            </div>
+            <div class="card tindog">
+                <h3>Tindog</h3>
+                <a href="./projects/TinDog Project/index.html">
+                    <img class="img-tindog" src="./Assets/tindog.png" />
+                Show me</a>    
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h3>© Maik Hanke.</h3>
+    </footer>
+</body>
+</html>
